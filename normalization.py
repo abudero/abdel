@@ -1,16 +1,11 @@
-import email
-from pickletools import read_uint1
-from turtle import RawTurtle
-
-
 class Normalization:
 
-    def __init__(self, email='', passwerd=''):
+    def __init__(self, email='', passwordd=''):
         self._email= email
-        self._password= passwerd
+        self._passwordd= passwordd
     
     def __str__(self):
-        return f'''Email:{self._email}, password:{self._password}'''
+        return f'''Email:{self._email}, password:{self._passwordd}'''
     
     @property
     def email(self):
@@ -21,12 +16,12 @@ class Normalization:
         self._email= email
 
     @property
-    def password(self):
-        return self._password
+    def passwordd(self):
+        return self._passwordd
     
-    @ password.setter
-    def password(self, password):
-        self._password= password
+    @ passwordd.setter
+    def passwordd(self, passwordd):
+        self._passwordd= passwordd
 
 if __name__=='__main__':
     person1=Normalization('abdel@gmail.com', 'lsadkfjasf')
